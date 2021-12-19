@@ -904,17 +904,6 @@ CreateThread(function()
 					playerCallSpeaker = playerData.callSpeaker or false
 				end
 			
-				local color = {255, 255, 255}
-				if IsControlPressed(0, 249) then
-					color = {255, 0, 0}
-				end
-				local size = 0.069
-				if mumbleConfig.voiceModes[playerMode][2] == 'Whisper' then
-					size = size / 4
-				elseif mumbleConfig.voiceModes[playerMode][2] == 'Normal' then
-					size = size / 2
-				end
-				
 				local talking = 'Shouting'
 				local talk_state = false
 				if mumbleConfig.voiceModes[playerMode][2] == 'Whisper' then
@@ -937,14 +926,14 @@ CreateThread(function()
 					exports['nazwa_waszego_hudu']:UpdateVoice(talking, talk_state)
 				end
 			
-				DrawRct(0.085, 0.985, 0.0705, 0.0125, 0, 0, 0, 120)
+				--[[DrawRct(0.085, 0.985, 0.0705, 0.0125, 0, 0, 0, 120)
 				DrawRct(0.0865, 0.985, size, 0.01, color[1], color[2], color[3], 70)
 				if playerCall > 0 then
 					DrawSprite('mpleaderboard', 'leaderboard_friends_icon', 0.15, 0.991, 0.012, 0.022, 0.0, 255, 255, 255, 255)
 					if playerCallSpeaker then
 						DrawSprite('mpleaderboard', 'leaderboard_plus_icon', 0.14, 0.991, 0.012, 0.022, 0.0, 255, 255, 255, 255)
 					end
-				elseif playerRadioActive then
+				else]]if playerRadioActive then
 					DrawSprite('mpleaderboard', 'leaderboard_audio_3', 0.15, 0.991, 0.012, 0.022, 0.0, 255, 255, 255, 255)
 				end
 			else
