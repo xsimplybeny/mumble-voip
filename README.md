@@ -1,8 +1,8 @@
-## Jak podpiąć mumble-voip do swojego hudu?**
+## Jak podpiąć mumble-voip do swojego hudu?
 -Wchodzimy w *mumble-voip/client.lua*.
 -Następnie zmieniamy kod.
 
-##Usuń
+## Usuń
 ```lua
 local color = {255, 255, 255}
 if IsControlPressed(0, 249) then
