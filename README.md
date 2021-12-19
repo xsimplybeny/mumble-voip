@@ -29,14 +29,14 @@ end
 
 if IsControlJustPressed(0, 249) then
     talk_state = true
-    exports['nazwa_waszego_hudu']:UpdateVoice(talking, talk_state) #Tu zmien nazwa_waszego_hudu na nazwe folderu z hudem.
+    exports['nazwa_waszego_hudu']:UpdateVoice(talking, talk_state) --Tu zmien nazwa_waszego_hudu na nazwe folderu z hudem.
 end
 if IsControlJustReleased(0, 249) then
     talk_state = false
-    exports['nazwa_waszego_hudu']:UpdateVoice(talking, talk_state) #Tu zmien nazwa_waszego_hudu na nazwe folderu z hudem.
+    exports['nazwa_waszego_hudu']:UpdateVoice(talking, talk_state) --Tu zmien nazwa_waszego_hudu na nazwe folderu z hudem.
 end
 if IsControlJustReleased(0, 166) then
-    exports['nazwa_waszego_hudu']:UpdateVoice(talking, talk_state) #Tu zmien nazwa_waszego_hudu na nazwe folderu z hudem.
+    exports['nazwa_waszego_hudu']:UpdateVoice(talking, talk_state) --Tu zmien nazwa_waszego_hudu na nazwe folderu z hudem.
 end
 ```
 ## W *__resource.lua* lub *fxmanifest.lua* dopisz:
