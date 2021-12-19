@@ -1,3 +1,9 @@
+## mumble-voip fixed by xsimplybeny
+- Manualne podpięcie każdego hudu.
+- Usunięty *"hud"* voica z klasycznego GTA.
+
+*Jeśli korzystasz z innego mumble-voipa to tu masz poradnik jak podłączyć manualnie własny hud.*
+
 ## Jak podpiąć mumble-voip do swojego hudu?
 - Wchodzimy w *mumble-voip/client.lua*.
 - Następnie zmieniamy kod.
