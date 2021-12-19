@@ -1,6 +1,6 @@
 ## Jak podpiąć mumble-voip do swojego hudu?
--Wchodzimy w *mumble-voip/client.lua*.
--Następnie zmieniamy kod.
+- Wchodzimy w *mumble-voip/client.lua*.
+- Następnie zmieniamy kod.
 
 ## Usuń
 ```lua
